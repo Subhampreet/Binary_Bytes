@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+   
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+
+
+
+    
+    <!-----------------------------CSS FILES------------------>
+    <link rel="stylesheet" href="./css/explore.css">
+
+    <!----------------AOS------------------>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+    <div class="banner" id="home">
+        <header >
+            <a href="#" class="logo">Binary <span>Bytes</span>
+            </a>
+            <div class="toggle-collapse">
+              <div id="myNav" class="overlay">
+                <a href="javascript:void(0)"
+                class = "closebtn"
+                onclick="closeNav()">&times;</a>
+                <div class="overlay-content" >
+                    <a href="./index.html">Home</a>
+                    <a href="./about_us.html">About Us</a>
+                    <a href="#">Services</a>
+                    <a href="#">Testimonial</a>
+                    <a href="#">Contact us</a>
+
+                </div>
+              </div>
+          
+              <div class="toggle-icons" onclick = "openNav()">
+                  <i class="fas fa-bars"></i>
+              </div>
+
+
+              <script>
+      
+                  function openNav(){
+                      document.getElementById("myNav")
+                      .style.height="100%";
+                  }
+                
+                  function closeNav(){
+                      document.getElementById("myNav")
+                      .style.height="0%";
+                  }
+                  
+              </script>
+                
+            </div>
+
+            <div class="mid-nav">
+              <ul class="nav-items">
+                  <li class="nav-link current">
+                      <a href="#home">Home</a>
+                  </li>
+                  <li class="nav-link">
+                      <a href="#about">About Us</a>
+                  </li>
+                  <li class="nav-link">
+                      <a href="#services">Services</a>
+                  </li>
+                  <li class="nav-link">
+                      <a href="#testimonial">Testimonial</a>
+                  </li>
+                  <li class="nav-link">
+                      <a href="#contact">Contact Us</a>
+                  </li>
+              </ul>
+            </div>
+        </header>
+        <img src="./assets/home2.jpg" >
+        <div class="content" >
+            <h2>#commitment</h2>
+            <h1>ENGAGE <span>US</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti architecto doloribus minus, laborum impedit libero nemo, accusantium voluptatibus reiciendis deserunt nam dignissimos? Nesciunt recusandae corporis quam voluptas. Eos, eveniet ipsum?</p>
+            <button>Engage Us</button>
+        </div>
+    </div>
+
+    
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    <!--------------------------------------------Message-------------------------------->
+    <section class="about" id="about">
+        <div class="contentBx">
+            <h2 class="heading" data-aos="fade-up">Why <span>Us?</span></h2>
+            <p class="text" data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero amet totam mollitia dolorum eligendi ullam. Accusantium vero repellendus sit est cumque, sequi nobis libero expedita quas, magnam dolor asperiores culpa recusandae modi incidunt, vitae earum excepturi id amet quaerat nemo quasi odio nisi! Ea, obcaecati velit dolorum provident pariatur quisquam?<br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus fuga sit aut eius voluptatem assumenda, ipsa accusantium harum deserunt mollitia omnis. Nobis, delectus provident, aperiam suscipit, id veniam nesciunt quod ex dignissimos eius iste! Aut tenetur voluptatibus architecto nobis nisi?</p>
+        </div>
+        <div class="imgBx"></div>
+    </section>
+
+
+
+
+    <!----------------------------------------------------------------Web Dev---------------------------------------------------------------------->
+    <section class="services1" id="services1">
+        <div class="content">
+            <h2 class="heading" data-aos="fade-up" data-aos-delay="300">Web Development</h2>
+            
+            <p data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, doloribus! Odit repellat fugit animi reprehenderit earum laudantium architecto eligendi facilis. Rem necessitatibus cumque id voluptatum architecto et ullam repellat molestias earum provident culpa modi fuga, dolorem cum ut dignissimos a harum recusandae. Vel obcaecati minima quis eveniet, voluptatem impedit nisi.</p>
+
+        </div>
+        
+       <div class="body">
+           <div class="container">
+               
+           </div>
+       </div>
+
+    </section>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-------------------------------------JS FILES------------------------->
+    <script src="./javascript/observers.js"></script>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+     
+ 
+    <script>
+      AOS.init();
+    </script>
+    
+</body>
+</html>

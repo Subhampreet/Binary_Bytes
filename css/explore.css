@@ -1,0 +1,519 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+/*-------------------------Header------------------*/
+
+.nav-color{
+  background: black;
+  height: 10vh;
+}
+
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(5, 4, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img{
+    position: absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.55;
+}
+
+.banner .content{
+     position: relative;
+     max-width: 750px;
+     text-align: center;
+}
+
+.banner .content h2{
+    color: #fff;
+    font-size: 35px;
+    font-family: 'MuseoModerno', cursive;
+
+    
+    letter-spacing: 2px;
+    
+ }
+
+.banner .content h1{
+    margin-top: -20px;
+    color: #fff;
+    font-size: 90px;
+    font-family: 'MuseoModerno', cursive;
+
+    letter-spacing: 2px;
+    color: #19a3e4;
+}
+
+
+
+.banner .content p{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Abel', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 0px;
+
+}
+
+.banner .content button{
+  margin-top: 20px;
+  font-family: 'Abel', sans-serif;
+  font-size: 17px;
+  color: aliceblue;
+  width: 120px;
+  border-radius: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 9px 15px;
+  border: 1.5px solid #1aa0df;
+  border-radius: 1000px;
+  background: transparent;
+  transition: .3s;
+  cursor: pointer;
+  
+
+}
+
+.banner .content button:hover{
+  border: 1px solid #fff;
+  background: transparent;
+  color: #1aa0df;
+}
+
+.banner .content  button:active {
+  background: #751402;
+}
+
+.banner header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.banner header .logo{
+    font-family: 'MuseoModerno', cursive;
+    color: white;
+    font-size: 30px;
+}
+
+.banner header .logo span{
+
+    color: #1aa0df;
+    font-family: 'MuseoModerno', cursive;
+}
+
+
+
+.banner .toggle-collapse .toggle-icons{
+    z-index: 30;
+    color: #fff;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    padding: 15px 80px;
+    font-size: 30px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+.banner .toggle-collapse .toggle-icons:hover {
+    color: #188ec5;
+}   
+
+.banner header .nav-items{
+    display: flex;
+    top: 0;
+    margin-right: 20em;
+    padding: 0px 30px;
+
+}
+
+.banner header .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    
+    position: relative;
+    font-family: 'Abel', sans-serif;
+    font-size: 15px;
+}
+
+.banner header .nav-items .nav-link  a{
+    color: white;
+    
+}
+
+
+.banner .nav-items{
+  display: flex;
+  margin-top: 0;
+  align-self: center;
+  
+
+}
+
+.banner .nav-items .nav-link {
+  margin-left: 20px;
+  padding: 1.4rem 0.4rem;
+  
+  position: relative;
+  font-family: 'Abel', sans-serif;
+  
+  
+}
+
+.nav-link::before,
+.current::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  background-color: #1aa0df;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 650ms;
+}
+
+.current::before{
+  transform: scaleX(1);
+}
+
+.nav-link:hover::before{
+  transform: scaleX(1);
+}
+
+.banner .nav-items .nav-link  a{
+  color: black;
+  font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+.nav .toggle-collapse .toggle-icons{
+  z-index: 30;
+  color: black;
+  position: absolute;
+  cursor: pointer;
+  right: 25px;
+  top: 12px;
+  font-size: 30px;
+  margin: 5px 0;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+.banner .toggle-collapse .toggle-icons:hover {
+  color: #188ec5;
+}
+
+
+/*-------overlay------------*/
+.overlay{
+    height: 0%; 
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background:  url(../assets/test3.jpg) center no-repeat ;
+    background-size: cover;
+    overflow-y: hidden;
+    transition: 0.5s;
+    z-index: 40;
+    
+}
+
+.overlay-content{
+    position: relative;
+    top:20%;
+    width:100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Abel', sans-serif;
+    transition: 0.5s;
+    transition-property: background;
+
+}
+
+.overlay a:hover, .overlay a:focus{
+    color: #ffffff;
+    background: black;
+}
+
+.overlay .closebtn{
+    position: absolute;
+    top: 20px;
+    right:45px;
+    font-size:40px;
+}
+
+
+/*-----------------------------About-----------------*/
+.about{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.about .contentBx{
+    background: #162c3b;
+    padding: 100px;
+    width: 60%;
+}
+
+.about .heading{
+    color: #fff;
+    width: 700px;
+    border-bottom: solid #fff 1.5px;
+    padding-bottom: 8px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.about .text{
+    color: #fff;
+    font-size: 19px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: 'Abel', sans-serif;
+    text-align: justify;
+}
+
+.about .imgBx{
+    background: url(../assets/bg1.jpg);
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/*-----------------------------About-----------------*/
+.about{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.about .contentBx{
+    background: rgb(252, 248, 248);
+    padding: 100px;
+    width: 60%;
+}
+
+.about .heading{
+    color: #19a3e4;
+    width: 700px;
+    border-bottom: solid black 1.5px;
+    padding-bottom: 8px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.about .heading span{
+    color: black;
+}
+.about .text{
+    
+    color: rgb(24, 21, 21);
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-family: 'Abel', sans-serif;
+    text-align: justify;
+}
+
+.about .imgBx{
+    background: url(../assets/bg2.jpg);
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/*--------------------------------------------------Web Development-----------------------------------------*/
+.services1{
+    background: #12222d;
+    padding: 60px 160px;
+    text-align: center;
+}
+
+
+
+.services1 .heading{
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 20px;
+}
+
+
+
+.services1 .content p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: 'Abel', sans-serif;
+    z-index: 60;
+    
+}
+
+.services1 .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px)
+{
+  .banner{
+    padding: 50px;
+  }
+  .banner header
+  {
+    padding: 5px 20px;
+  }
+
+  .banner .content h2{
+    font-size: 27px;
+    margin-bottom: 3px;
+  }
+
+
+
+  .banner .content h1{
+    font-size: 46px;
+  }
+  .banner .content p{
+    font-size: 16px;
+  }
+
+  .about{
+    flex-direction: column;
+  }
+
+  .about .contentBx,
+  .about .imgBx{
+    width: 100%;
+    padding: 50px;
+    min-height: 400px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .about .heading{
+    width: 100%;
+    border: none;
+    
+
+  }
+
+  .services1{
+    padding: 50px;
+  }
+  .services1 .container{
+    justify-content: center;
+    margin-top: 20px;
+    
+  }
+
+}
+
+
+@media screen and (min-width: 700px){
+    header{
+      height: 4rem;
+    }
+  
+    
+  }
+  
+@media (max-width: 1350px){
+    .mid-nav{
+      display: none;
+    }
+  
+    .about .heading{
+      width: 100%;
+    }
+}
+

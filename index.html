@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Bytes</title>
+
+    <!----------------Font Styles--------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+   
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+
+
+
+    
+    <!-----------------------------CSS FILES------------------>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!----------------AOS------------------>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+    <div class="banner" id="home">
+        <header >
+            <a href="#" class="logo">Binary <span>Bytes</span>
+            </a>
+            <div class="toggle-collapse">
+              <div id="myNav" class="overlay">
+                <a href="javascript:void(0)"
+                class = "closebtn"
+                onclick="closeNav()">&times;</a>
+                <div class="overlay-content" >
+                    <a href="./index.html">Home</a>
+                    <a href="./about_us.html">About Us</a>
+                    <a href="#">Services</a>
+                    <a href="#">Testimonial</a>
+                    <a href="#">Contact us</a>
+
+                </div>
+              </div>
+          
+              <div class="toggle-icons" onclick = "openNav()">
+                  <i class="fas fa-bars"></i>
+              </div>
+
+
+              <script>
+      
+                  function openNav(){
+                      document.getElementById("myNav")
+                      .style.height="100%";
+                  }
+                
+                  function closeNav(){
+                      document.getElementById("myNav")
+                      .style.height="0%";
+                  }
+                  
+              </script>
+                
+            </div>
+
+            <div class="mid-nav">
+              <ul class="nav-items">
+                  <li class="nav-link current">
+                      <a href="#home">Home</a>
+                  </li>
+                  <li class="nav-link">
+                      <a href="#about">About Us</a>
+                  </li>
+                  <li class="nav-link">
+                      <a href="#services">Services</a>
+                  </li>
+                  <li class="nav-link">
+                      <a href="#testimonial">Testimonial</a>
+                  </li>
+                  <li class="nav-link">
+                      <a href="#contact">Contact Us</a>
+                  </li>
+              </ul>
+            </div>
+        </header>
+        <img src="./assets/home.png" >
+        <div class="content">
+            <h2>Your one point</h2>
+            <h1>DESTINATION <span>TO</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti architecto doloribus minus, laborum impedit libero nemo, accusantium voluptatibus reiciendis deserunt nam dignissimos? Nesciunt recusandae corporis quam voluptas. Eos, eveniet ipsum?</p>
+            <button><a href="./page2.html">Explore</a> </button>
+        </div>
+    </div>
+
+    
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    
+    
+    <!-----------------------About Us------------------->
+    <section class="about" id="about">
+        <div class="contentBx">
+            <h2 class="heading" data-aos="fade-up">About Us</h2>
+            <p class="text" data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero amet totam mollitia dolorum eligendi ullam. Accusantium vero repellendus sit est cumque, sequi nobis libero expedita quas, magnam dolor asperiores culpa recusandae modi incidunt, vitae earum excepturi id amet quaerat nemo quasi odio nisi! Ea, obcaecati velit dolorum provident pariatur quisquam?<br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus fuga sit aut eius voluptatem assumenda, ipsa accusantium harum deserunt mollitia omnis. Nobis, delectus provident, aperiam suscipit, id veniam nesciunt quod ex dignissimos eius iste! Aut tenetur voluptatibus architecto nobis nisi?</p>
+        </div>
+        <div class="imgBx"></div>
+    </section>
+
+
+
+    <!-----------------------------------Services-------------------------->
+    <section class="services" id="services">
+        <div class="content">
+            <h2 class="heading" data-aos="fade-up" data-aos-delay="300">Our Services</h2>
+            
+            <p data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, doloribus! Odit repellat fugit animi reprehenderit earum laudantium architecto eligendi facilis. Rem necessitatibus cumque id voluptatum architecto et ullam repellat molestias earum provident culpa modi fuga, dolorem cum ut dignissimos a harum recusandae. Vel obcaecati minima quis eveniet, voluptatem impedit nisi.</p>
+
+        </div>
+        
+        <div class="container" data-aos="fade-up" data-aos-delay="400">
+            <div class="flip-card-container" style="--hue: 220">
+                <div class="flip-card">
+              
+                  <div class="card-front">
+                    <figure>
+                      <div class="img-bg"></div>
+                      <img src="./assets/ser1.jpg">
+                      <figcaption>Hardware</figcaption>
+                    </figure>
+              
+                    <ul>
+                      <li>Detail 1</li>
+                      <li>Detail 2</li>
+                      <li>Detail 3</li>
+                      <li>Detail 4</li>
+                      <li>Detail 5</li>
+                    </ul>
+                  </div>
+              
+                  <div class="card-back">
+                    <figure>
+                      <div class="img-bg"></div>
+                      <img src="./assets/ser1.jpg">
+                    </figure>
+              
+                    <button>Explore</button>
+              
+                    <div class="design-container">
+                      <span class="design design--1"></span>
+                      <span class="design design--2"></span>
+                      <span class="design design--3"></span>
+                      <span class="design design--4"></span>
+                      <span class="design design--5"></span>
+                      <span class="design design--6"></span>
+                      <span class="design design--7"></span>
+                      <span class="design design--8"></span>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+              <!-- /flip-card-container -->
+              
+              <!-- flip-card-container -->
+              <div class="flip-card-container" style="--hue: 170">
+                <div class="flip-card">
+              
+                  <div class="card-front">
+                    <figure>
+                      <div class="img-bg"></div>
+                      <img src="./assets/ser2.jpg">
+                      <figcaption>Web Development</figcaption>
+                    </figure>
+              
+                    <ul>
+                      <li>Responsive Web Development</li>
+                      <li>E-Commerce Website</li>
+                      <li>UI/UX Design</li>
+                      <li>Small Business Website</li>
+                      <li>Blogging Website</li>
+                    </ul>
+                  </div>
+              
+                  <div class="card-back">
+                    <figure>
+                      <div class="img-bg"></div>
+                      <img src="./assets/ser2.jpg">
+                    </figure>
+              
+                    <button>Explore</button>
+              
+                    <div class="design-container">
+                      <span class="design design--1"></span>
+                      <span class="design design--2"></span>
+                      <span class="design design--3"></span>
+                      <span class="design design--4"></span>
+                      <span class="design design--5"></span>
+                      <span class="design design--6"></span>
+                      <span class="design design--7"></span>
+                      <span class="design design--8"></span>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+              <!-- /flip-card-container -->
+              
+              <!-- flip-card-container -->
+              <div class="flip-card-container" style="--hue: 350">
+                <div class="flip-card">
+              
+                  <div class="card-front">
+                    <figure>
+                      <div class="img-bg"></div>
+                      <img src="./assets/ser3.jpg">
+                      <figcaption>Software Development</figcaption>
+                    </figure>
+              
+                    <ul>
+                      <li>Detail 1</li>
+                      <li>Detail 2</li>
+                      <li>Detail 3</li>
+                      <li>Detail 4</li>
+                      <li>Detail 5</li>
+                    </ul>
+                  </div>
+              
+                  <div class="card-back">
+                    <!-- only if the image is necessary -->
+                    <figure>
+                      <div class="img-bg"></div>
+                      <img src="./assets/ser3.jpg">
+                    </figure>
+              
+                    <button>Explore</button>
+              
+                    <!-- can add svg here and remove these eight spans -->
+                    <div class="design-container">
+                      <span class="design design--1"></span>
+                      <span class="design design--2"></span>
+                      <span class="design design--3"></span>
+                      <span class="design design--4"></span>
+                      <span class="design design--5"></span>
+                      <span class="design design--6"></span>
+                      <span class="design design--7"></span>
+                      <span class="design design--8"></span>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+              <!-- /flip-card-container -->
+              
+              
+                
+        </div>
+    </section>
+    
+
+    <section class="technology">
+      <div class="contentBx">
+        <h2 class="heading" data-aos="fade-up">We use cutting edge Technology</h2>
+        <p class="text" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque id est nisi perspiciatis adipisci! Sapiente repellat facere necessitatibus beatae fugiat dicta sunt, voluptas fugit temporibus dolore perspiciatis labore blanditiis quod architecto ipsa provident non dolores vel eligendi, voluptatibus consectetur? Impedit, eum. Quisquam nisi dolores itaque! Placeat est sit molestias eos necessitatibus eligendi ab consequatur illum consectetur iure! Eaque, similique excepturi!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis adipisci beatae temporibus repudiandae pariatur sapiente sint eos laudantium, esse, quo doloribus illum itaque eaque distinctio aspernatur reprehenderit. Vitae, reprehenderit distinctio!  
+        </p>
+      </div>
+      <div class="imgBx">
+        <img src="./assets/logo.png">
+      </div>
+    </section>
+
+
+    <!----------------------------------------------------------------------------------Testimonials------------------------------------->
+    <section class="testimonial" id="testimonial">
+      <h2 class="heading" data-aos="fade-up">What Our Clients say</h2>
+      <div class="subhead" data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus rem aliquid laboriosam expedita? Veniam, blanditiis!</div>
+      <div class="container" data-aos="fade-up" data-aos-delay="400">
+        <div class="contentBx">
+          <div class="quote">"</div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At ratione rerum magni architecto eaque excepturi enim, nulla ut. Est, quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus.</p>
+          <h3>Someone Famous</h3>
+        </div>
+        <div class="contentBx">
+          <div class="quote">"</div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At ratione rerum magni architecto eaque excepturi enim, nulla ut. Est, quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, non.</p>
+          <h3>Someone Famous</h3>
+        </div>
+        <div class="contentBx">
+          <div class="quote">"</div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At ratione rerum magni architecto eaque excepturi enim, nulla ut. Est, quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, non.</p>
+          <h3>Someone Famous</h3>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!--------------------------------------coNTACT------------------>
+    <section class="contact" id="contact">
+      <div class="content">
+        <h2 class="heading" data-aos="fade-up">Place Your Quote</h2>
+        <p class="text" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, incidunt aut dignissimos officiis fugiat adipisci voluptas tempora aspernatur laborum porro. Accusantium rem, nam commodi ratione vitae illo omnis maiores quod quas adipisci! Vel voluptate odit aspernatur quisquam ut odio porro, inventore sequi, reiciendis nisi recusandae minima amet. Quia, saepe autem?</p>
+
+      </div>
+      
+
+
+      <section class="about">
+        <div class="contentBx redbg">
+          <div class="form">
+             <div class="inputBx">
+               <input type="text" name="" placeholder="Full Name">
+             </div>
+             <div class="inputBx">
+              <input type="text" name="" placeholder="Email Address">
+            </div>
+            <div class="inputBx">
+              <input type="text" name="" placeholder="Mobile Number">
+            </div>
+            
+            <div class="inputBx serv">
+              <label for="service">Service</label>
+              <select  id="service">
+                <option value="service">Select Service</option>
+                <option value="Hardware">Hardware</option>
+                <option value="Web-Development">Web-Development</option>
+                <option value="Software-Development">Software-Development</option>
+                <option value="UI/UX">UI/UX Design</option>
+                <option value="App-Development">Android-App Development</option>
+
+              </select>
+            </div>
+            
+            <div class="inputBx">
+              <textarea placeholder="Write your message here"></textarea>
+            </div>
+            <div class="inputBx">
+              <input type="submit" name="" value="Send">
+            </div>
+          </div>
+        </div>
+        <div class="imgBx2"></div>
+    </section>
+
+
+    </section>
+
+
+    <!-----------------------------------------------------------Footer--------------------------------------->
+    <section class="footer">
+      <div class="main-content">
+        <div class="left box" >
+            <div class="title">Binary <span>Bytes</span></div>
+            <div class="content" >
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nulla autem qui ea ratione voluptates in aliquam quae dolorem harum cumque deleniti dignissimos cum deserunt, exercitationem sapiente delectus tempore voluptatum!</p>
+            </div>
+            <div class="social">
+                <a href="#"><span class = "fab fa-facebook"></span></a>
+                <a href="#"><span class = "fab fa-twitter"></span></a>
+                <a href="#"><span class = "fab fa-instagram"></span></a>
+                <a href="#"><span class = "fab fa-youtube"></span></a>
+
+            </div>
+        </div>
+
+        <div class="center box">
+            <h2>Address</h2>
+            <div class="content">
+                <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">Bhubaneswar,Odisha</span>
+                </div>
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+0999999999</span>
+                </div>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">abc@gmail.com</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="right box">
+            <h2>Contact Us</h2>
+            <div class="content">
+                <form action="#">
+                    <div class="email">
+                        <div class="text">Email *</div>
+                        <input type="email" required>
+                    </div>
+                    <div class="msg">
+                        <div class="text">Message *</div>
+                        <textarea name="" cols="25" rows="2" required></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+      
+    
+    </section>
+
+    <section class="bottom">
+      <div class="bottom">
+        <center>
+            <span class="credit">Created By <a href="#" class="credit">@Subhampreet_And_Anupreeta</a></span>
+            <span class="far fa-copyright credit"></span><span>2020 All Rights Reserved.</span>
+        </center>
+      </div>
+    </section>
+
+
+
+
+
+
+     <!-------------------------------------JS FILES------------------------->
+     <script src="./javascript/observers.js"></script>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+     
+ 
+    <script>
+      AOS.init();
+    </script>
+
+    
+</body>
+</html>
